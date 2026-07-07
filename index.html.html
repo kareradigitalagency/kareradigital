@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Karera Digital — Premium Websites & Digital Growth</title>
+  <meta name="description" content="Karera Digital builds premium websites, brand identities, and digital growth for local businesses across Madhya Pradesh. Trusted by shops, schools, clinics and startups."/>
+  <meta name="keywords" content="premium website design MP, digital marketing Shivpuri, branding Karera, website development Madhya Pradesh"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#F0F4FF;
+  --white:#FFFFFF;
+  --mid:#0B0718;
+  --mid2:#13102E;
+  --ind:#6D28D9;
+  --ind-d:#5B21B6;
+  --ind-l:rgba(109,40,217,.1);
+  --cyan:#0DD4C0;
+  --text:#0D0B24;
+  --text2:#2D2B4E;
+  --muted:#6E6A8E;
+  --border:rgba(109,40,217,.09);
+  --bd:#rgba(255,255,255,.1);
+  --green:#00C896;
+  --r:14px;
+  --r-lg:22px
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#F0F4FF}
+::-webkit-scrollbar-thumb{background:var(--ind);border-radius:3px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(247,249,252,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Poppins',sans-serif;font-weight:900;font-size:1.25rem;color:var(--mid);text-decoration:none;letter-spacing:-.5px}
+.logo em{color:var(--ind);font-style:normal}
+.nl{display:flex;gap:2.5rem;list-style:none}
+.nl a{color:var(--muted);font-size:.875rem;font-weight:500;text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--text)}
+.nc{background:var(--mid);color:#fff;padding:.55rem 1.25rem;border-radius:8px;font-weight:600;font-size:.85rem;text-decoration:none;transition:all .2s}
+.nc:hover{background:var(--ind);transform:translateY(-1px)}
+.hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hbg span{display:block;width:22px;height:2px;background:var(--mid);border-radius:2px;transition:all .3s}
+.mob{display:none;position:fixed;top:64px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:1.5rem 6%;z-index:999;flex-direction:column;box-shadow:0 20px 40px rgba(15,23,42,.1)}
+.mob.open{display:flex}
+.mob a{color:var(--text2);font-size:.95rem;text-decoration:none;font-weight:500;padding:.85rem 0;border-bottom:1px solid var(--border)}
+.mob a:last-child{border:none;color:var(--ind);font-weight:700}
+
+/* LAYOUT */
+.wrap{max-width:1160px;margin:0 auto;padding:0 6%}
+section{padding:110px 0}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ind);margin-bottom:.9rem}
+.h2{font-family:'Poppins',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.12;color:var(--text);letter-spacing:-1px;margin-bottom:.9rem}
+.sub{color:var(--muted);font-size:1rem;line-height:1.75;max-width:480px}
+.tc{text-align:center}
+.tc .sub{margin:0 auto}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.75rem;border-radius:10px;font-weight:600;font-size:.9rem;text-decoration:none;transition:all .25s;cursor:pointer;border:none;letter-spacing:-.2px}
+.btn-dark{background:var(--mid);color:#fff}
+.btn-dark:hover{background:var(--ind);transform:translateY(-2px);box-shadow:0 8px 24px rgba(109,40,217,.3)}
+.btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--border)}
+.btn-ghost:hover{border-color:var(--ind);color:var(--ind)}
+
+/* HERO */
+#hero{min-height:100vh;background:linear-gradient(160deg,#0B0718 0%,#130D2E 50%,#0B0718 100%);display:flex;align-items:center;padding-top:64px;position:relative;overflow:hidden}
+.hg1{position:absolute;top:-120px;right:-80px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(109,40,217,.35) 0%,transparent 60%);pointer-events:none}
+.hg2{position:absolute;bottom:-180px;left:5%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(13,212,192,.18) 0%,transparent 60%);pointer-events:none}
+.hero-in{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1;min-height:calc(100vh - 64px);padding:80px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(109,40,217,.15);border:1px solid rgba(109,40,217,.3);padding:.35rem .9rem;border-radius:6px;font-size:.75rem;font-weight:700;color:var(--cyan);letter-spacing:.5px;margin-bottom:1.5rem}
+.eyebrow-dot{width:6px;height:6px;background:var(--cyan);border-radius:50%}
+.h1{font-family:'Poppins',sans-serif;font-size:clamp(3rem,5.5vw,5rem);font-weight:900;line-height:1.04;color:#fff;letter-spacing:-2.5px;margin-bottom:1.5rem}
+.h1 .gr{background:linear-gradient(135deg,#A78BFA 0%,#6D28D9 40%,#0DD4C0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{color:rgba(255,255,255,.5);font-size:1.05rem;line-height:1.8;max-width:440px;margin-bottom:2.5rem}
+.hbtns{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* GLASS CARDS */
+.hero-vis{position:relative;height:500px}
+.gc{position:absolute;background:rgba(255,255,255,.07);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:1.4rem 1.6rem;color:#fff;box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.gc-lbl{font-size:.68rem;font-weight:600;color:rgba(255,255,255,.35);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.5rem}
+.gc-title{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:.25rem}
+.gc-sub{font-size:.8rem;color:rgba(255,255,255,.45)}
+.gc-ico{width:36px;height:36px;border-radius:10px;margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.gc-ico-ind{background:rgba(109,40,217,.25)}
+.gc-ico-cyn{background:rgba(13,212,192,.2)}
+.gc-ico-grn{background:rgba(0,200,150,.2)}
+.badge-ok{background:rgba(0,200,150,.18);color:var(--green);font-size:.72rem;font-weight:700;padding:.2rem .55rem;border-radius:4px;display:inline-block}
+.badge-cy{background:rgba(13,212,192,.15);color:var(--cyan);font-size:.72rem;font-weight:700;padding:.2rem .55rem;border-radius:4px;display:inline-block}
+.gc-list{list-style:none;margin-top:.6rem}
+.gc-list li{display:flex;align-items:center;gap:.45rem;font-size:.8rem;color:rgba(255,255,255,.6);padding:.18rem 0}
+.gc-list li::before{content:'✓';color:var(--green);font-weight:700;font-size:.72rem}
+.gc1{top:30px;left:5%;width:210px;animation:f1 6s ease-in-out infinite}
+.gc2{top:160px;right:3%;width:200px;animation:f2 7s ease-in-out infinite}
+.gc3{bottom:70px;left:18%;width:250px;animation:f3 5.5s ease-in-out infinite}
+.gc4{top:290px;left:48%;width:175px;animation:f1 8s ease-in-out infinite reverse}
+@keyframes f1{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-18px) rotate(1deg)}}
+@keyframes f2{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-12px) rotate(-1deg)}}
+@keyframes f3{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* TRUST */
+#trust{background:var(--white);padding:32px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.trust-row{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
+.tr-item{display:flex;align-items:center;gap:.6rem;color:var(--muted);font-size:.88rem;font-weight:500}
+.tr-item i{color:var(--ind);font-size:.95rem}
+.tr-dot{width:3px;height:3px;background:var(--border);border-radius:50%;flex-shrink:0}
+
+/* SERVICES */
+#services{background:var(--bg)}
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;flex-wrap:wrap;gap:1.5rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.sc{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ind),var(--cyan));transform:scaleX(0);transition:transform .3s}
+.sc:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(15,23,42,.09);border-color:rgba(109,40,217,.2)}
+.sc:hover::after{transform:scaleX(1)}
+.sc-ico{width:46px;height:46px;border-radius:12px;background:var(--ind-l);display:flex;align-items:center;justify-content:center;margin-bottom:1.3rem;font-size:1.2rem;color:var(--ind)}
+.sc h3{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.55rem}
+.sc p{color:var(--muted);font-size:.87rem;line-height:1.7}
+.sc-arr{display:inline-block;margin-top:1.1rem;font-size:.78rem;font-weight:600;color:#6D28D9;opacity:0;transition:opacity .3s}
+.sc:hover .sc-arr{opacity:1}
+
+/* PORTFOLIO */
+#portfolio{background:var(--white)}
+.port-note{display:inline-flex;align-items:center;gap:.5rem;background:rgba(109,40,217,.06);border:1px solid rgba(109,40,217,.15);border-radius:8px;padding:.6rem 1rem;color:var(--ind);font-size:.8rem;font-weight:500;margin-top:.8rem}
+.port-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3.5rem}
+.pc{border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:all .3s;background:var(--bg);cursor:default}
+.pc:hover{transform:translateY(-4px);box-shadow:0 24px 56px rgba(15,23,42,.1);border-color:rgba(109,40,217,.2)}
+.pv{height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pv i{font-size:3.5rem;position:relative;z-index:1;opacity:.9}
+.pv::before{content:'';position:absolute;inset:0}
+.pv-1::before{background:linear-gradient(135deg,#0a1628 0%,#162848 100%)}
+.pv-2::before{background:linear-gradient(135deg,#160c3a 0%,#2d1a72 100%)}
+.pv-3::before{background:linear-gradient(135deg,#0a2216 0%,#1a4a2e 100%)}
+.pv-4::before{background:linear-gradient(135deg,#220a18 0%,#4a1a30 100%)}
+.pi{padding:1.6rem}
+.p-cat{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ind);margin-bottom:.5rem}
+.pi h4{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.pi p{color:var(--muted);font-size:.86rem;line-height:1.65}
+.p-tags{display:flex;gap:.4rem;margin-top:1rem;flex-wrap:wrap}
+.p-tag{background:var(--ind-l);color:var(--ind);font-size:.7rem;font-weight:600;padding:.2rem .55rem;border-radius:5px}
+.pc-w{grid-column:1/-1}
+.pc-w .pv{height:160px}
+
+/* PROCESS */
+#process{background:var(--bg)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:4.5rem;position:relative}
+.proc-grid::before{content:'';position:absolute;top:27px;left:13%;right:13%;height:1px;background:linear-gradient(90deg,transparent,var(--border) 20%,var(--border) 80%,transparent)}
+.ps{text-align:center}
+.ps-num{width:54px;height:54px;border-radius:50%;background:var(--white);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:800;color:var(--ind);margin:0 auto 1.3rem;position:relative;z-index:1;transition:all .3s}
+.ps:hover .ps-num{background:var(--ind);color:#fff;border-color:var(--ind);transform:scale(1.1);box-shadow:0 8px 24px rgba(109,40,217,.3)}
+.ps h4{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.ps p{color:var(--muted);font-size:.84rem;line-height:1.65;max-width:180px;margin:0 auto}
+
+/* WHY US */
+#why{background:linear-gradient(160deg,#0B0718 0%,#130D2E 100%);padding:110px 0}
+.why-h .tag{color:var(--cyan)}
+.why-h .h2{color:#fff}
+.why-h .sub{color:rgba(255,255,255,.45);margin-bottom:3.5rem}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.wc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:2.2rem;transition:all .3s}
+.wc:hover{background:rgba(109,40,217,.12);border-color:rgba(109,40,217,.3);transform:translateY(-5px)}
+.wc-ico{font-size:1.8rem;margin-bottom:1.3rem}
+.wc h4{font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:.7rem}
+.wc p{color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75}
+.wc em{color:var(--cyan);font-style:normal;font-weight:600}
+
+/* PRICING */
+#pricing{background:var(--bg)}
+.pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+.prc{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:2.2rem;position:relative;transition:all .3s}
+.prc:hover:not(.prc-feat){transform:translateY(-3px);box-shadow:0 16px 40px rgba(15,23,42,.08)}
+.prc-feat{background:linear-gradient(145deg,#13102E,#1A1540);border-color:var(--ind);box-shadow:0 0 0 1px var(--ind),0 24px 64px rgba(109,40,217,.2);transform:translateY(-10px)}
+.prc-feat:hover{transform:translateY(-14px)}
+.prc-badge{display:inline-block;background:var(--ind);color:#fff;font-size:.68rem;font-weight:700;padding:.22rem .6rem;border-radius:4px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.4rem}
+.prc-plan{font-size:.78rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:.6rem}
+.prc-feat .prc-plan{color:rgba(255,255,255,.35)}
+.prc-amt{font-family:'Poppins',sans-serif;font-size:2.8rem;font-weight:900;color:var(--text);line-height:1}
+.prc-feat .prc-amt{color:#fff}
+.prc-amt sup{font-size:1.3rem;vertical-align:super;font-weight:700}
+.prc-amt .pmo{font-size:.88rem;font-weight:400;color:var(--muted)}
+.prc-feat .pmo{color:rgba(255,255,255,.35)}
+.prc-desc{color:var(--muted);font-size:.83rem;margin:.7rem 0 1.8rem}
+.prc-feat .prc-desc{color:rgba(255,255,255,.4)}
+.prc-feats{list-style:none;margin-bottom:2rem}
+.prc-feats li{display:flex;align-items:flex-start;gap:.65rem;font-size:.86rem;color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border)}
+.prc-feat .prc-feats li{color:rgba(255,255,255,.5);border-bottom-color:rgba(255,255,255,.06)}
+.prc-feats li:last-child{border-bottom:none}
+.ck{color:var(--green);font-size:.75rem;margin-top:2px;flex-shrink:0}
+.pb-d{display:block;text-align:center;padding:.9rem;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;background:var(--mid);color:#fff;transition:all .25s}
+.pb-d:hover{background:var(--ind);transform:translateY(-1px)}
+.pb-i{display:block;text-align:center;padding:.9rem;border-radius:10px;font-weight:700;font-size:.9rem;text-decoration:none;background:var(--ind);color:#fff;transition:all .25s;box-shadow:0 4px 16px rgba(109,40,217,.35)}
+.pb-i:hover{background:var(--ind-d);transform:translateY(-1px);box-shadow:0 8px 24px rgba(109,40,217,.45)}
+
+/* FAQ */
+#faq{background:var(--white)}
+.faq-w{max-width:680px;margin:4rem auto 0}
+.fi{border-bottom:1px solid var(--border)}
+.fi:first-child{border-top:1px solid var(--border)}
+.fq{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:600;font-size:.93rem;color:var(--text);gap:1rem;user-select:none;transition:color .2s}
+.fq:hover{color:var(--ind)}
+.fi-ico{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.8rem;color:var(--muted);transition:all .3s}
+.fq.open .fi-ico{background:var(--ind);border-color:var(--ind);color:#fff;transform:rotate(45deg)}
+.fa-ans{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;color:var(--muted);font-size:.9rem;line-height:1.75;padding:0}
+.fa-ans.open{max-height:220px;padding-bottom:1.3rem}
+
+/* CONTACT */
+#contact{background:linear-gradient(160deg,#130D2E 0%,#0B0718 100%);padding:110px 0}
+.ctt-in{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+.ctt-l .tag{color:var(--cyan)}
+.ctt-l .h2{color:#fff}
+.ctt-l .sub{color:rgba(255,255,255,.4);max-width:360px}
+.clinks{margin-top:2.5rem;display:flex;flex-direction:column;gap:.9rem}
+.cl-link{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);text-decoration:none;color:#fff;transition:all .25s}
+.cl-link:hover{background:rgba(109,40,217,.15);border-color:rgba(109,40,217,.3);transform:translateX(5px)}
+.cl-ico{width:40px;height:40px;border-radius:10px;background:rgba(109,40,217,.2);display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0;color:var(--ind)}
+.cl-lbl{font-size:.7rem;color:rgba(255,255,255,.3);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.cl-val{font-size:.92rem;font-weight:600;margin-top:.1rem}
+.cform-w{background:var(--white);border-radius:var(--r-lg);padding:2.5rem}
+.cform-w h3{font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:.3rem}
+.cform-note{color:var(--muted);font-size:.84rem;margin-bottom:1.8rem}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fg{margin-bottom:1rem}
+.fg label{display:block;font-size:.79rem;font-weight:600;color:var(--text2);margin-bottom:.4rem}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:.72rem 1rem;color:var(--text);font-size:.9rem;font-family:'Inter',sans-serif;transition:border-color .2s;appearance:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--ind);background:#fff}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--muted)}
+.fg textarea{resize:none;height:88px}
+.fsub{width:100%;padding:.95rem;background:var(--ind);color:#fff;border:none;border-radius:10px;font-family:'Poppins',sans-serif;font-weight:700;font-size:.92rem;cursor:pointer;transition:all .25s;box-shadow:0 4px 16px rgba(109,40,217,.3)}
+.fsub:hover{background:var(--ind-d);transform:translateY(-2px);box-shadow:0 8px 24px rgba(109,40,217,.4)}
+.fok{display:none;text-align:center;padding:3rem 2rem}
+.fok-circle{width:64px;height:64px;border-radius:50%;background:rgba(0,200,150,.1);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--green);margin:0 auto 1.2rem}
+.fok h4{font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:.5rem}
+.fok p{color:var(--muted);font-size:.88rem;margin-bottom:1.5rem}
+.fok .btn-i{display:inline-flex;align-items:center;gap:.5rem;background:var(--ind);color:#fff;padding:.8rem 1.5rem;border-radius:10px;font-weight:700;font-size:.88rem;text-decoration:none;transition:all .2s}
+.fok .btn-i:hover{background:var(--ind-d);transform:translateY(-1px)}
+
+/* FOOTER */
+footer{background:#07041A;padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.ft-in{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.ft-logo{font-family:'Poppins',sans-serif;font-weight:900;font-size:1.2rem;color:#fff;display:block;text-decoration:none;letter-spacing:-.5px;margin-bottom:.8rem}
+.ft-logo em{color:var(--ind);font-style:normal}
+.ft-brand p{color:rgba(255,255,255,.25);font-size:.84rem;line-height:1.7;max-width:240px}
+.ft-soc{display:flex;gap:.6rem;margin-top:1.4rem}
+.ft-s{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-size:.85rem;text-decoration:none;transition:all .25s}
+.ft-s:hover{background:var(--ind);border-color:var(--ind);color:#fff}
+.ft-col h5{font-family:'Poppins',sans-serif;font-size:.82rem;font-weight:700;color:#fff;margin-bottom:1.2rem}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:.7rem}
+.ft-col ul li a{color:rgba(255,255,255,.25);font-size:.83rem;text-decoration:none;transition:color .2s}
+.ft-col ul li a:hover{color:rgba(255,255,255,.65)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.ft-bot p{color:rgba(255,255,255,.18);font-size:.78rem}
+.ft-bot a{color:var(--ind);text-decoration:none;font-weight:500}
+
+/* WA FLOAT */
+.wa{position:fixed;bottom:26px;right:22px;z-index:999;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.5),0 0 0 4px rgba(37,211,102,.1);animation:wap 2.5s ease-in-out infinite;transition:transform .2s}
+.wa:hover{transform:scale(1.12)!important;animation:none}
+@keyframes wap{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+/* REVEAL */
+.rev{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.rev.in{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid::before{display:none}
+  .pr-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+  .prc-feat{transform:none}
+  .prc-feat:hover{transform:translateY(-4px)}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .ft-in{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media(max-width:768px){
+  .nl,.nc{display:none}
+  .hbg{display:flex}
+  .hero-in{grid-template-columns:1fr;padding:50px 0 60px}
+  .hero-vis{height:300px;margin-top:2rem}
+  .gc4{display:none}
+  .gc1{left:2%}
+  .gc2{right:0;width:175px}
+  .gc3{bottom:20px;left:10%;width:230px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-head{flex-direction:column;align-items:flex-start}
+  .port-grid{grid-template-columns:1fr}
+  .pc-w{grid-column:1}
+  .why-grid{grid-template-columns:1fr}
+  .ctt-in{grid-template-columns:1fr;gap:3rem}
+  .ft-in{grid-template-columns:1fr;gap:2rem}
+  .ft-bot{flex-direction:column;text-align:center}
+  .fr{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  section{padding:80px 0}
+  .proc-grid{grid-template-columns:1fr}
+  .hero-vis{height:240px}
+}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#hero">Karera<em>Digital</em></a>
+  <ul class="nl">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nc" href="https://wa.me/918305730901?text=Namaste%20Karera%20Digital!%20I%20want%20to%20discuss%20a%20project." target="_blank">Book a Call</a>
+  <button class="hbg" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob" id="mobNav">
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#portfolio" onclick="closeNav()">Work</a>
+  <a href="#pricing" onclick="closeNav()">Pricing</a>
+  <a href="#faq" onclick="closeNav()">FAQ</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+  <a href="https://wa.me/918305730901" target="_blank">WhatsApp Karo →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hg1"></div>
+  <div class="hg2"></div>
+  <div class="wrap">
+    <div class="hero-in">
+      <div class="hero-left rev">
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Premium Digital Agency · Karera, MP</div>
+        <h1 class="h1">Grow Local.<br><span class="gr">Win Digital.</span></h1>
+        <p class="hero-sub">Premium websites and digital growth for ambitious businesses. We build what local brands need to compete — and win — online.</p>
+        <div class="hbtns">
+          <a class="btn btn-dark" href="https://wa.me/918305730901?text=Namaste!%20I%20want%20to%20book%20a%20free%20strategy%20call." target="_blank"><i class="fas fa-calendar-check"></i> Book Free Strategy Call</a>
+          <a class="btn btn-ghost" href="#portfolio" style="color:#fff;border-color:rgba(255,255,255,.15)"><i class="fas fa-arrow-right"></i> View Work</a>
+        </div>
+      </div>
+      <div class="hero-vis rev">
+        <!-- Glass Card 1 -->
+        <div class="gc gc1">
+          <div class="gc-ico gc-ico-ind"><i class="fas fa-globe" style="color:var(--ind)"></i></div>
+          <div class="gc-lbl">Website Design</div>
+          <div class="gc-title">Mobile-First</div>
+          <div class="gc-sub">Fast · Accessible · SEO-ready</div>
+        </div>
+        <!-- Glass Card 2 -->
+        <div class="gc gc2">
+          <div class="gc-lbl">What We Deliver</div>
+          <ul class="gc-list">
+            <li>Premium website</li>
+            <li>Brand identity kit</li>
+            <li>Google visibility</li>
+            <li>Social growth</li>
+          </ul>
+        </div>
+        <!-- Glass Card 3 -->
+        <div class="gc gc3">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem">
+            <div class="gc-title">Strategy Call</div>
+            <span class="badge-ok">Free</span>
+          </div>
+          <div class="gc-sub" style="margin-bottom:.7rem">Talk to a real person, not a form.</div>
+          <span class="badge-cy">No commitment needed</span>
+        </div>
+        <!-- Glass Card 4 -->
+        <div class="gc gc4">
+          <div class="gc-ico gc-ico-grn"><i class="fas fa-bolt" style="color:var(--green)"></i></div>
+          <div class="gc-lbl">Delivery</div>
+          <div class="gc-title">5-Day Websites</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="tr-item"><i class="fas fa-laptop-code"></i> Website Design</div>
+      <div class="tr-dot"></div>
+      <div class="tr-item"><i class="fas fa-palette"></i> Brand Identity</div>
+      <div class="tr-dot"></div>
+      <div class="tr-item"><i class="fas fa-search"></i> SEO Growth</div>
+      <div class="tr-dot"></div>
+      <div class="tr-item"><i class="fas fa-hashtag"></i> Social Media</div>
+      <div class="tr-dot"></div>
+      <div class="tr-item"><i class="fab fa-google"></i> Google Business</div>
+      <div class="tr-dot"></div>
+      <div class="tr-item"><i class="fas fa-bullseye"></i> Digital Ads</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="svc-head rev">
+      <div>
+        <div class="tag">What We Do</div>
+        <h2 class="h2">Services built for<br>real business growth</h2>
+      </div>
+      <p class="sub" style="max-width:320px">No packages that waste your budget. Only what your business actually needs.</p>
+    </div>
+    <div class="svc-grid rev">
+      <div class="sc">
+        <div class="sc-ico"><i class="fas fa-laptop-code"></i></div>
+        <h3>Website Design & Development</h3>
+        <p>Clean, fast, mobile-first websites that load in under 3 seconds. Built for conversions, not just looks. Includes domain setup and basic SEO.</p>
+        <span class="sc-arr">Website Design →</span>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><i class="fas fa-palette"></i></div>
+        <h3>Brand Identity</h3>
+        <p>Logo, colors, typography, and usage guidelines. A complete brand kit that makes your business look polished and trustworthy everywhere.</p>
+        <span class="sc-arr">Brand Identity →</span>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><i class="fas fa-search"></i></div>
+        <h3>SEO & Google Search</h3>
+        <p>Get found when people search for what you offer. On-page optimization, Google Business setup, and local keyword targeting for MP businesses.</p>
+        <span class="sc-arr">SEO Growth →</span>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><i class="fas fa-hashtag"></i></div>
+        <h3>Social Media Management</h3>
+        <p>Consistent content, real engagement, and platform strategy for Instagram and Facebook. Posts, reels, and captions handled for you.</p>
+        <span class="sc-arr">Social Media →</span>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><i class="fab fa-google"></i></div>
+        <h3>Google Business Profile</h3>
+        <p>Show up on Google Maps when local customers search. Profile setup, photo optimization, and review management for local visibility.</p>
+        <span class="sc-arr">Local Visibility →</span>
+      </div>
+      <div class="sc">
+        <div class="sc-ico"><i class="fas fa-bullseye"></i></div>
+        <h3>Digital Ads (Google & Meta)</h3>
+        <p>Paid campaigns that bring real leads, not just impressions. Budget-conscious, ROI-focused ads for businesses ready to grow faster.</p>
+        <span class="sc-arr">Run Ads →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="wrap">
+    <div class="rev">
+      <div class="tag">Our Work</div>
+      <h2 class="h2">Projects we've built</h2>
+      <p class="sub">A few examples of recent client work across different industries in Madhya Pradesh.</p>
+      <div class="port-note"><i class="fas fa-info-circle"></i> Shown with client permission. No fake case studies.</div>
+    </div>
+    <div class="port-grid rev">
+      <div class="pc">
+        <div class="pv pv-1"><i class="fas fa-store" style="color:rgba(109,40,217,.7)"></i></div>
+        <div class="pi">
+          <div class="p-cat">Website + Branding</div>
+          <h4>Retail Shop — Shivpuri</h4>
+          <p>Full website with product catalogue and WhatsApp order integration. Brand identity from scratch including logo and social kit.</p>
+          <div class="p-tags"><span class="p-tag">Website</span><span class="p-tag">Logo</span><span class="p-tag">Social Kit</span></div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="pv pv-2"><i class="fas fa-graduation-cap" style="color:rgba(109,40,217,.7)"></i></div>
+        <div class="pi">
+          <div class="p-cat">Website + SEO</div>
+          <h4>Coaching Institute — Karera</h4>
+          <p>Mobile-first website with online inquiry form. Google Business setup and local SEO for "coaching near me" searches in the region.</p>
+          <div class="p-tags"><span class="p-tag">Website</span><span class="p-tag">SEO</span><span class="p-tag">Google Maps</span></div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="pv pv-3"><i class="fas fa-stethoscope" style="color:rgba(0,200,150,.6)"></i></div>
+        <div class="pi">
+          <div class="p-cat">Digital Presence</div>
+          <h4>Local Clinic — Madhya Pradesh</h4>
+          <p>Professional website, Google Business optimization, and appointment inquiry system. Built to build patient trust and local discoverability.</p>
+          <div class="p-tags"><span class="p-tag">Website</span><span class="p-tag">GMB</span><span class="p-tag">Trust Design</span></div>
+        </div>
+      </div>
+      <div class="pc pc-w">
+        <div class="pv pv-4"><i class="fas fa-mug-hot" style="color:rgba(255,180,100,.7)"></i></div>
+        <div class="pi">
+          <div class="p-cat">Brand Identity + Social Media</div>
+          <h4>Food & Beverage Business — Shivpuri</h4>
+          <p>Complete brand identity and 3-month social media management. Logo design, packaging guidelines, and consistent Instagram content strategy that grew their local reach organically.</p>
+          <div class="p-tags"><span class="p-tag">Branding</span><span class="p-tag">Instagram</span><span class="p-tag">Content Strategy</span><span class="p-tag">Logo</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="tc rev">
+      <div class="tag">How We Work</div>
+      <h2 class="h2">Simple. Transparent. Fast.</h2>
+      <p class="sub">Four steps from first conversation to live project — no surprises.</p>
+    </div>
+    <div class="proc-grid rev">
+      <div class="ps">
+        <div class="ps-num">01</div>
+        <h4>Discover</h4>
+        <p>We listen to your goals, understand your business, and figure out what you actually need.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-num">02</div>
+        <h4>Design</h4>
+        <p>We create a direction that fits your brand. You review, give feedback, and we refine.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-num">03</div>
+        <h4>Build</h4>
+        <p>We build your website, create your assets, and keep you updated throughout.</p>
+      </div>
+      <div class="ps">
+        <div class="ps-num">04</div>
+        <h4>Launch</h4>
+        <p>We go live together. You get all files, training, and a post-launch check-in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="wrap">
+    <div class="why-h rev">
+      <div class="tag">Why Karera Digital</div>
+      <h2 class="h2" style="color:#fff">Built different.<br>For local businesses.</h2>
+      <p class="sub">Big-city agencies don't understand Karera. We do.</p>
+    </div>
+    <div class="why-grid rev">
+      <div class="wc">
+        <div class="wc-ico">⚡</div>
+        <h4>Fast</h4>
+        <p>Most websites delivered in <em>5 business days</em>. Logos in 48 hours. We respect your time because we know your time is money.</p>
+      </div>
+      <div class="wc">
+        <div class="wc-ico">🤝</div>
+        <h4>Simple</h4>
+        <p>No confusing reports or agency jargon. We explain everything in plain language. <em>Direct WhatsApp communication</em> — always.</p>
+      </div>
+      <div class="wc">
+        <div class="wc-ico">📍</div>
+        <h4>Local First</h4>
+        <p>We are from here. We know the Karera and Shivpuri market. <em>Local understanding</em> + digital expertise — that's the difference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="tc rev">
+      <div class="tag">Pricing</div>
+      <h2 class="h2">Honest pricing.<br>No hidden fees.</h2>
+      <p class="sub">Choose what fits your stage. Upgrade or cancel anytime after the first 3 months.</p>
+    </div>
+    <div class="pr-grid rev">
+      <!-- STARTER -->
+      <div class="prc">
+        <div class="prc-plan">Starter</div>
+        <div class="prc-amt"><sup>₹</sup>2,999<span class="pmo">/month</span></div>
+        <p class="prc-desc">For new businesses getting their first digital presence.</p>
+        <ul class="prc-feats">
+          <li><i class="fas fa-check ck"></i> Social Media Setup (2 platforms)</li>
+          <li><i class="fas fa-check ck"></i> 12 posts per month</li>
+          <li><i class="fas fa-check ck"></i> Basic logo design</li>
+          <li><i class="fas fa-check ck"></i> Google My Business setup</li>
+          <li><i class="fas fa-check ck"></i> Monthly performance report</li>
+          <li><i class="fas fa-check ck"></i> WhatsApp support</li>
+        </ul>
+        <a class="pb-d" href="https://wa.me/918305730901?text=Namaste!%20I%20am%20interested%20in%20the%20Starter%20Plan%20at%20Rs.2999%2Fmonth." target="_blank">Get Started</a>
+      </div>
+      <!-- GROWTH (featured) -->
+      <div class="prc prc-feat">
+        <div class="prc-badge">Most Popular</div>
+        <div class="prc-plan">Growth</div>
+        <div class="prc-amt"><sup>₹</sup>5,999<span class="pmo">/month</span></div>
+        <p class="prc-desc">For businesses ready to grow their digital footprint seriously.</p>
+        <ul class="prc-feats">
+          <li><i class="fas fa-check ck"></i> Social Media (3 platforms)</li>
+          <li><i class="fas fa-check ck"></i> 24 posts + 8 reels per month</li>
+          <li><i class="fas fa-check ck"></i> Professional logo + brand kit</li>
+          <li><i class="fas fa-check ck"></i> 5-page business website</li>
+          <li><i class="fas fa-check ck"></i> Google Ads (₹1,000 budget included)</li>
+          <li><i class="fas fa-check ck"></i> On-page SEO</li>
+          <li><i class="fas fa-check ck"></i> Weekly reports</li>
+          <li><i class="fas fa-check ck"></i> Priority WhatsApp support</li>
+        </ul>
+        <a class="pb-i" href="https://wa.me/918305730901?text=Namaste!%20I%20am%20interested%20in%20the%20Growth%20Plan%20at%20Rs.5999%2Fmonth." target="_blank">Get Started</a>
+      </div>
+      <!-- SCALE -->
+      <div class="prc">
+        <div class="prc-plan">Scale</div>
+        <div class="prc-amt"><sup>₹</sup>20,999<span class="pmo">/month</span></div>
+        <p class="prc-desc">Enterprise-scale growth for ambitious brands scaling aggressively.</p>
+        <ul class="prc-feats">
+          <li><i class="fas fa-check ck"></i> All platforms — unlimited</li>
+          <li><i class="fas fa-check ck"></i> 40 posts + 16 reels per month</li>
+          <li><i class="fas fa-check ck"></i> Full website + e-commerce</li>
+          <li><i class="fas fa-check ck"></i> Google + Meta Ads (₹3,000 budget)</li>
+          <li><i class="fas fa-check ck"></i> Complete SEO (on + off page)</li>
+          <li><i class="fas fa-check ck"></i> YouTube channel management</li>
+          <li><i class="fas fa-check ck"></i> Daily reports + strategy call</li>
+          <li><i class="fas fa-check ck"></i> Dedicated account manager</li>
+        </ul>
+        <a class="pb-d" href="https://wa.me/918305730901?text=Namaste!%20I%20am%20interested%20in%20the%20Scale%20Plan%20at%20Rs.20999%2Fmonth." target="_blank">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="tc rev">
+      <div class="tag">FAQ</div>
+      <h2 class="h2">Common questions</h2>
+      <p class="sub">Things people usually want to know before they start.</p>
+    </div>
+    <div class="faq-w rev">
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>How long does a website take to build?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">A standard 5-page business website is delivered in 5–7 business days after we receive your content and feedback. E-commerce or custom websites take 2–3 weeks. We always give you a realistic timeline before we start.</div>
+      </div>
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>What is the minimum contract length?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">Monthly plans require a minimum 3-month commitment — digital marketing takes time to show results. After that, you can continue month-to-month or pause anytime with 30 days notice.</div>
+      </div>
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>How do I pay? Do you take UPI?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">Yes — UPI, PhonePe, Google Pay, and bank transfer are all accepted. Monthly plans are paid in advance. For one-time projects, we take 50% to start and 50% on delivery.</div>
+      </div>
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>Do you work with businesses outside Karera?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">Absolutely. We work with businesses across Madhya Pradesh and India. Everything is handled online — strategy calls, reviews, and updates happen over WhatsApp and video call.</div>
+      </div>
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>Do you create the social media content or do I?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">We handle everything — design, copywriting, captions, and hashtags. You provide product photos or basic information about what to promote. We do the creative work from there.</div>
+      </div>
+      <div class="fi">
+        <div class="fq" onclick="toggleFaq(this)">
+          <span>What results can I realistically expect?</span>
+          <div class="fi-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="fa-ans">We won't promise specific numbers — results depend on your industry, budget, and market. What we do promise is consistent, quality work and transparent monthly reporting so you always know exactly what's happening.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="ctt-in">
+      <div class="ctt-l rev">
+        <div class="tag">Let's Talk</div>
+        <h2 class="h2">Start with a free strategy call.</h2>
+        <p class="sub">No sales pitch. Just an honest conversation about what your business needs and whether we're the right fit.</p>
+        <div class="clinks">
+          <a class="cl-link" href="https://wa.me/918305730901?text=Namaste%20Karera%20Digital!%20I%20want%20to%20book%20a%20free%20strategy%20call." target="_blank">
+            <div class="cl-ico"><i class="fab fa-whatsapp" style="color:#25D366"></i></div>
+            <div>
+              <div class="cl-lbl">WhatsApp</div>
+              <div class="cl-val">+91 83057 30901</div>
+            </div>
+          </a>
+          <a class="cl-link" href="tel:+918305730901">
+            <div class="cl-ico"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="cl-lbl">Call Us</div>
+              <div class="cl-val">+91 83057 30901</div>
+            </div>
+          </a>
+          <a class="cl-link" href="mailto:kareradigitalagency@gmail.com">
+            <div class="cl-ico"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="cl-lbl">Email</div>
+              <div class="cl-val">kareradigitalagency@gmail.com</div>
+            </div>
+          </a>
+          <div class="cl-link" style="cursor:default">
+            <div class="cl-ico"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="cl-lbl">Location</div>
+              <div class="cl-val">Karera, Shivpuri, MP — 473995</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rev">
+        <div class="cform-w">
+          <div id="formFields">
+            <h3>Book a Free Strategy Call</h3>
+            <p class="cform-note">We'll reach out within 24 hours on WhatsApp.</p>
+            <div class="fr">
+              <div class="fg"><label>Your Name *</label><input type="text" id="fn" placeholder="Full name"/></div>
+              <div class="fg"><label>WhatsApp / Phone *</label><input type="tel" id="fp" placeholder="+91 XXXXXXXXXX"/></div>
+            </div>
+            <div class="fg"><label>Business Type</label><input type="text" id="fb" placeholder="e.g. Clothing shop, Clinic, School…"/></div>
+            <div class="fg">
+              <label>Service You Need</label>
+              <select id="fs">
+                <option value="">— Select a service —</option>
+                <option>Website Design</option>
+                <option>Brand Identity</option>
+                <option>SEO & Google Search</option>
+                <option>Social Media Management</option>
+                <option>Google Business Profile</option>
+                <option>Digital Ads</option>
+                <option>Full Digital Package</option>
+              </select>
+            </div>
+            <div class="fg"><label>Anything else you'd like to share</label><textarea id="fm" placeholder="Tell us a bit about your business or what you're trying to achieve…"></textarea></div>
+            <button class="fsub" onclick="sendForm()"><i class="fas fa-arrow-right"></i> &nbsp;Send Message</button>
+          </div>
+          <div class="fok" id="formOk">
+            <div class="fok-circle">✓</div>
+            <h4>Message received!</h4>
+            <p>We'll reply on WhatsApp within 24 hours. Or tap below to start the conversation now.</p>
+            <a class="btn-i" href="https://wa.me/918305730901?text=Namaste!%20I%20just%20submitted%20an%20inquiry%20on%20your%20website." target="_blank"><i class="fab fa-whatsapp"></i> Open WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ft-in">
+      <div class="ft-brand">
+        <a class="ft-logo" href="#hero">Karera<em>Digital</em></a>
+        <p>Premium websites and digital growth for local businesses across Madhya Pradesh.</p>
+        <div class="ft-soc">
+          <a class="ft-s" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="ft-s" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="ft-s" href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="ft-s" href="https://wa.me/918305730901" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">Brand Identity</a></li>
+          <li><a href="#services">SEO & Search</a></li>
+          <li><a href="#services">Social Media</a></li>
+          <li><a href="#services">Google Business</a></li>
+          <li><a href="#services">Digital Ads</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:kareradigitalagency@gmail.com">Email Us</a></li>
+          <li><a href="https://wa.me/918305730901" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2025 Karera Digital. All rights reserved. Karera, Shivpuri, MP — 473995.</p>
+      <p>Made with precision in <a href="#hero">Madhya Pradesh</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa" href="https://wa.me/918305730901?text=Namaste%20Karera%20Digital!%20I%20want%20to%20discuss%20a%20project." target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+  function toggleNav(){ document.getElementById('mobNav').classList.toggle('open'); }
+  function closeNav(){ document.getElementById('mobNav').classList.remove('open'); }
+
+  function toggleFaq(el){
+    const allQ = document.querySelectorAll('.fq');
+    const allA = document.querySelectorAll('.fa-ans');
+    allQ.forEach((q,i)=>{ if(q!==el){ q.classList.remove('open'); allA[i].classList.remove('open'); } });
+    el.classList.toggle('open');
+    el.nextElementSibling.classList.toggle('open');
+  }
+
+  function sendForm(){
+    const n = document.getElementById('fn').value.trim();
+    const p = document.getElementById('fp').value.trim();
+    const b = document.getElementById('fb').value.trim();
+    const s = document.getElementById('fs').value;
+    const m = document.getElementById('fm').value.trim();
+    if(!n||!p){ alert('Please enter your name and phone number.'); return; }
+    let msg = 'Namaste Karera Digital!\n\n';
+    msg += 'Name: '+n+'\n';
+    msg += 'Phone: '+p+'\n';
+    if(b) msg += 'Business: '+b+'\n';
+    if(s) msg += 'Service: '+s+'\n';
+    if(m) msg += 'Message: '+m+'\n';
+    msg += '\nI would like to book a free strategy call.';
+    document.getElementById('formFields').style.display='none';
+    document.getElementById('formOk').style.display='block';
+    setTimeout(()=>{ window.open('https://wa.me/918305730901?text='+encodeURIComponent(msg),'_blank'); },900);
+  }
+
+  // Reveal on scroll
+  const ro = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } });
+  },{ threshold:.1 });
+  document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
+
+  // Close mobile nav on outside click
+  document.addEventListener('click',(e)=>{
+    if(!e.target.closest('nav')&&!e.target.closest('#mobNav')){ document.getElementById('mobNav').classList.remove('open'); }
+  });
+</script>
+</body>
+</html>
